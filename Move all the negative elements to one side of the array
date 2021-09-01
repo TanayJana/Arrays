@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int[] a=new int[]{-12, 11, -13, -5, 6, -7, 5, -3, -6};
+		for(int i=0;i<a.length;i++)
+		{ for(int j=i+1;j<a.length;j++)
+		    if(a[j]<0 && a[i]>0){
+		        int c=a[i];
+		        a[i]=a[j];
+		        a[j]=c;
+		    }
+		}
+		for(int h:a){
+		System.out.print(" "+h);
+		}
+	}
+}
